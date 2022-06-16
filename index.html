@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flexbox</title>
+    <link href="http://fonts.cdnfonts.com/css/lexend-deca" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/big-shoulders-display" rel="stylesheet"> 
+    
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    flex: 1 100%;
+    margin-top: 60px;
+    padding: 10px;    
+    margin-left: 150px;
+
+}
+.aside1{
+    background: hsl(31, 77%, 52%);
+    width: 280px;
+    height: 400px;
+    padding: 2em;
+    flex-direction: row;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.aside2{
+    background: hsl(184, 100%, 22%);
+    width: 280px;
+    height: 400px;
+    padding: 2em;
+    flex-direction: row;
+    
+}
+.aside3{
+    background: hsl(179, 100%, 13%);
+    width: 280px;
+    height: 400px;
+    padding: 2em;
+    flex-direction: row;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+p{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'big shoulder display', cursive;
+    font-weight: 400;
+    margin-top: 3em;
+}
+
+button{
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    background:hsla(0, 0%, 100%, 0.75) ;
+ 
+}
+.btn1{
+    color: hsl(31, 77%, 52%);
+    
+
+}
+.btn2{
+    color: hsl(184, 100%, 22%);
+
+}
+.btn3{
+    margin-top: 70px;
+    color: hsl(179, 100%, 13%);
+}
+button:hover{
+    background: #fff;
+}
+
+h1{
+    font-family: 'lexend deca', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font: large;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 30px;
+
+
+}
+@media all and(min-width: 1400px){
+    .aside1{
+        flex: 1;
+    }
+    .aside1{
+        order: 1;
+    }
+    .aside2{
+        order: 1;
+    }
+    .aside2{
+        order: 1;
+    }
+    aside3{
+        
+    }
+}
+@media all and (min-width: 375px){
+    .aside{
+        flex: 1;
+
+    }
+}
+</style>
+</head>
+<header>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Flexbox</a>
+                </li>
+            <li><a href="grid.html">Grid</a></li>
+        </ul>
+
+    </div>
+</header>
+<body>
+    <div  class="wrapper">
+        <header class="header">
+            <h1>Flexbox</h1>
+        </header>
+        <aside class="aside1">
+            <img src="image/icon-sedans.svg" alt="">
+            <h1>SEDANS</h1>
+            <p>Choose a sedan for its affordablity and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+            <button class="btn1">Learn more</button>
+        </aside>
+        <aside class="aside2">
+            <img src="image/icon-suvs.svg" alt="">
+            <h1>SUVS</h1>
+            <p>Take an SUV for its spacious interior,power and versatility. Perfect for your next family vacation and off-road adventures.</p>
+            <button class="btn2">Learn more</button>
+        </aside>
+        <aside class="aside3">
+            <img src="image/icon-luxury.svg" alt="">
+            <h1>LUXURY</h1>
+            <p>Cruise in the best car brands without the bloated prices. 
+                Enjoy the comfort of a luxury rental and arrive in style.</p>
+            <button class="btn3">Learn more</button>
+        </aside>
+    
+      
+
+
+    </div>
+</body>
+</html>
