@@ -34,9 +34,12 @@ main div{
 }
 .d{
     background-color: #01aefd;
-    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
     
 }
 .e{
     background-color: #01aefd;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
