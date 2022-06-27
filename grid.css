@@ -1,45 +1,73 @@
-main{
-    display: grid;
-    grid-gap: 12px;  
-    width: 50%;
-    height: 90vh;
-    margin: auto;
-}
-main div{
-    display: grid;
-    grid-template-columns: 200px 250px;
-    grid-auto-rows: minmax(150px, auto);
-    grid-gap: 10px;
-}
-.a{
-    background-color: #eb5020;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    width: 500px;
-
-}
-.b{
-    background-color: #fca201;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 250px;
-
-}
-.c{
-    background-color: #05aa42;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    width: 300px;
-    grid-template-rows: 20%;
-}
-.d{
-    background-color: #01aefd;
-    grid-row-start: 2;
-    grid-row-end: 4;
+a{
+    border-style: outset;
+    border-color: black;
+    border-radius: 4px;
+    background-color: red;
+    width: 120px;
+    margin-left: 30px;
     
+  }
+  .header{
+    display: block;
+    height: 30px;
+    padding: 10px;
+    color: rgb(242, 242, 242);
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+  }
+
+.item1 { grid-area: header; 
+height: 130px;
+background-color: orangered;
+color: orangered;
 }
-.e{
-    background-color: #01aefd;
-    grid-row-start: 2;
-    grid-row-end: 4;
+.item2 { grid-area: menu;
+height: 140px;
+background-color: green;
+color: green;
+}
+.item3 { grid-area: main; 
+height: 45px;
+background-color: #2196F3;
+color: #2196F3;
+}
+.item4 { grid-area: right;
+background-color: orange;
+color: orange;
+}
+.item5 { grid-area: footer;
+height: 45px;
+background-color: #2196F3;
+color: #2196F3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header right right'
+    'header header header header right right'
+    'menu menu menu main main main'
+    'menu menu menu footer footer footer';
+  gap: 10px;
+  background-color: rgb(0, 3, 14);
+  padding: 10px;
+  width: 500px;
+ 
+  border-style: solid;
+  border-color: rgb(0, 1, 14);
+  padding: 20px 160px 40px 40px;
+  margin-top: 10px;
+  margin-left: 25%;
+  
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
